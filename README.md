@@ -71,7 +71,7 @@ Versions follow the format **vX.Y**:
 **Last update:** v3.0 (May 2026)
 
 Download the latest version here: 
-https://github.com/mariovanhoucke/MSLIB-Multi-Skilled-Resource-Constrained-Project-Library/releases/latest
+https://github.com/mariovanhoucke/DSLIB-Dynamic-Scheduling-Empirical-Project-Library/releases/latest
 
 ## Websites
 
