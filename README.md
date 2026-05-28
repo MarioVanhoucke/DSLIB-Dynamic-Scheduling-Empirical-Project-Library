@@ -6,23 +6,27 @@ PSLIB is an empirical project database for **baseline scheduling, risk analysis,
 
 ---
 
-## Paper
+```markdown
+## Citation
 
-This dataset has been presented in the following paper (but later extended):
+This dataset was originally presented in the following paper, which should be cited whenever the dataset or any part of its data is used:
 
 - Batselier, J. & Vanhoucke, M. (2015).  
   *Construction and evaluation framework for a real-life project database.*  
-  International Journal of Project Management, 33(3), 697–710.  
-  https://doi.org/10.1016/j.ijproman.2014.09.004  
+  *International Journal of Project Management*, 33(3), 697–710.  
+  https://doi.org/10.1016/j.ijproman.2014.09.004
 
-At the time of publication, the database contained **52 projects**. Since then, the dataset has been expanded substantially and now contains more than **four times as many projects**. Please use the above reference when referring to this dataset.
+At the time of publication (2015), the database contained **52 projects**. Since then, the dataset has been substantially expanded.
 
-The updated version (December 2024) contains **203 projects**, with a detailed summary provided in the following books:
+The updated version (December 2024) contains **203 projects**, while the current release (May 2026) contains **231 projects**.
+
+A detailed description and analysis of the expanded dataset can be found in the following books:
 
 - Vanhoucke, M. (2023). *The illusion of control: Project data, computer algorithms and human intuition for project management and control.* Springer.  
 - Vanhoucke, M. (2024). *A quest for projects with scarce resources: Seeking schedule intelligence through project data discovery.* Springer.
 
-In **May 2026**, the dataset has further grown to **231 projects**. 
+Users are strongly encouraged to also reference these books when the extended dataset is used in full or when analyses rely on the enriched and expanded project collection. However, the 2015 journal paper remains the primary reference for the dataset.
+```
 
 ---
 
@@ -43,7 +47,9 @@ More information on the DS framework can be found in the following books:
 - Vanhoucke, M. (2014). *Integrated project management and control: First comes the theory, then the practice (1st ed.).* Springer.  
 - Vanhoucke, M. (2013). *Project management with dynamic scheduling: Baseline scheduling, risk analysis and project control (2nd ed.).* Springer.  
 - Vanhoucke, M. (2016). *Integrated project management sourcebook: A technical guide to project scheduling, risk and control (1st ed.).* Springer.  
-- Vanhoucke, M. (2018). *The data-driven project manager: A statistical battle against project obstacles (1st ed.).* Springer.  
+- Vanhoucke, M. (2018). *The data-driven project manager: A statistical battle against project obstacles (1st ed.).* Springer.
+- Vanhoucke, M. (2023). *The illusion of control: Project data, computer algorithms and human intuition for project management and control.* Springer.  
+- Vanhoucke, M. (2024). *A quest for projects with scarce resources: Seeking schedule intelligence through project data discovery.* Springer.
 - Vanhoucke, M. (2026). *Data-driven project management with Python :Optimizing schedules, simulating risk and analyzing project performance through 10 example experiments (1st ed.).* Springer.  
 
 ---
@@ -75,8 +81,8 @@ https://github.com/mariovanhoucke/DSLIB-Dynamic-Scheduling-Empirical-Project-Lib
 
 ## Websites
 
-- Staff members: https://www.projectmanagement.ugent.be/staff/members  
-- Project data: https://www.projectmanagement.ugent.be/research/data (including artificial and empirical projects)
+- OR-AS data webpage: https://www.or-as.be/research/data
+- University data webpage:  https://www.projectmanagement.ugent.be/research/data (including artificial and empirical projects)
 
 ---
 
@@ -90,6 +96,5 @@ Not applicable for this dataset.
 ## Interested in More?
 
 - Books on project management: https://www.or-as.be/books  
-- Project summary page: https://www.projectmanagement.ugent.be/research/data
-- Academic peer-reviewed articles: https://www.projectmanagement.ugent.be/staff/publications  
+- OR&S Research page: https://www.or-as.be/research/
 - Free short articles: https://medium.com/@mario.vanhoucke  
