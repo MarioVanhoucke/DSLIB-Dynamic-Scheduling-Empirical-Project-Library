@@ -2,7 +2,7 @@
 
 PSLIB is an empirical project database for **baseline scheduling, risk analysis, and project control** within the Dynamic Scheduling (DS) framework.
 
-**Last update:** May 2026
+**Last update:** August 2026
 
 ---
 
@@ -18,7 +18,7 @@ This dataset was originally presented in the following paper, which should be ci
 
 At the time of publication (2015), the database contained **52 projects**. Since then, the dataset has been substantially expanded.
 
-The updated version (December 2024) contains **203 projects**, while the current release (May 2026) contains **231 projects**.
+The updated version (December 2024) contains **203 projects**, while the current release contains **231 projects**.
 
 A detailed description and analysis of the expanded dataset can be found in the following books:
 
@@ -74,7 +74,7 @@ Versions follow the format **vX.Y**:
 
 **Note:** When a new release is published, the previous release is removed. Please always use the latest version.
 
-**Last update:** v3.2 (July 2026): Find details about the updates in the accompanying Excel file.
+**Last update:** v3.3 (August 2026): Find details about the updates in the accompanying Excel file.
 
 Download the latest version here: 
 https://github.com/mariovanhoucke/DSLIB-Dynamic-Scheduling-Empirical-Project-Library/releases/latest
