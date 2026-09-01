@@ -6,15 +6,12 @@ PSLIB is an empirical project database for **baseline scheduling, risk analysis,
 
 ---
 
-```markdown
 ## Citation
 
 This dataset was originally presented in the following paper, which should be cited whenever the dataset or any part of its data is used:
 
-- Batselier, J. & Vanhoucke, M. (2015).  
-  *Construction and evaluation framework for a real-life project database.*  
-  *International Journal of Project Management*, 33(3), 697–710.  
-  https://doi.org/10.1016/j.ijproman.2014.09.004
+- Batselier, J. & Vanhoucke, M. (2015). Construction and evaluation framework for a real-life project database. International Journal of Project Management, 33(3), 697–710.  
+- https://doi.org/10.1016/j.ijproman.2014.09.004
 
 At the time of publication (2015), the database contained **52 projects**. Since then, the dataset has been substantially expanded.
 
@@ -26,7 +23,6 @@ A detailed description and analysis of the expanded dataset can be found in the 
 - Vanhoucke, M. (2024). *A quest for projects with scarce resources: Seeking schedule intelligence through project data discovery.* Springer.
 
 Users are strongly encouraged to also reference these books when the extended dataset is used in full or when analyses rely on the enriched and expanded project collection. However, the 2015 journal paper remains the primary reference for the dataset.
-```
 
 ---
 
