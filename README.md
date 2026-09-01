@@ -74,7 +74,7 @@ Versions follow the format **vX.Y**:
 
 **Note:** When a new release is published, the previous release is removed. Please always use the latest version.
 
-**Last update:** v3.3 (August 2026): Find details about the updates in the accompanying Excel file.
+**Last update:** v3.4 (September 2026): Find details about the updates in the accompanying Excel file.
 
 Download the latest version here: 
 https://github.com/mariovanhoucke/DSLIB-Dynamic-Scheduling-Empirical-Project-Library/releases/latest
