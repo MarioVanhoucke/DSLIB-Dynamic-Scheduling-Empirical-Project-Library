@@ -26,7 +26,7 @@ jobs:
           cd work
           for z in *.zip; do unzip -q -o "$z" -d unpacked; done
           mkdir -p keep
-          find unpacked -path '*__MACOSX*' -prune -o -type f \( -iname '*.p2x' -o -iname '*.p4x' -o -iname '*analysis*.xlsx' \) -print0 | xargs -0 -I{} cp {} keep/
+          find unpacked -path '*__MACOSX*' -prune -o -type f \( -iname '*.p2x' -o -iname '*.p2x.zip' -o -iname '*.p4x' -o -iname '*analysis*.xlsx' \) -print0 | xargs -0 -I{} cp {} keep/
           ls keep | wc -l
           (cd keep && zip -q -9 ../DSLIB.zip *)
       - name: Commit data/DSLIB.zip to the protrack-data branch
