@@ -1,0 +1,43 @@
+# Keeps data/DSLIB.zip up to date for ProTrack 4.0's "Open DSLIB online" button.
+# Runs by itself whenever a new release is published (and can be started by hand
+# under Actions). It takes the release zip, keeps only the ProTrack files and the
+# analysis sheet, and commits them as data/DSLIB.zip on the branch "protrack-data"
+# (a separate branch, so the front page of the repository stays as it is).
+name: Update online data for ProTrack
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the release zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p work
+          gh release download ${{ github.event.release.tag_name }} --pattern '*.zip' --dir work --clobber
+      - name: Keep the ProTrack files and the analysis sheet
+        run: |
+          cd work
+          for z in *.zip; do unzip -q -o "$z" -d unpacked; done
+          mkdir -p keep
+          find unpacked -path '*__MACOSX*' -prune -o -type f \( -iname '*.p2x' -o -iname '*.p4x' -o -iname '*analysis*.xlsx' \) -print0 | xargs -0 -I{} cp {} keep/
+          ls keep | wc -l
+          (cd keep && zip -q -9 ../DSLIB.zip *)
+      - name: Commit data/DSLIB.zip to the protrack-data branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # A branch with only this one file, replaced on every update.
+          git checkout --orphan protrack-data
+          git rm -rq --cached .
+          mkdir -p data
+          cp work/DSLIB.zip data/DSLIB.zip
+          git add data/DSLIB.zip
+          git commit -qm "Update data/DSLIB.zip for ProTrack 4.0"
+          git push --force origin protrack-data
